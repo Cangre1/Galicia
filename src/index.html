@@ -18,25 +18,29 @@
 
   <body id="body">
     <!--Nav start-->
-    <header class="container mx-auto px-5 py-3">
-      <img src="img/icon-galicia.svg" class="w-32 md:w-full" alt="" />
+    <header class="container mx-auto px-5 py-3 max-w-screen-xl">
+      <a href="index.html">
+        <img src="img/icon-galicia.svg" class="w-32" alt=""
+      /></a>
     </header>
     <!--Nav end-->
 
     <!--Contenido-->
-    <section>
-      <div class="container mx-auto px-5 bg-[#f2f2f2]">
+    <section class="bg-[#f2f2f2]">
+      <div class="container mx-auto px-5 max-w-screen-xl">
         <!--Hero start-->
-        <div class="flex flex-col py-20 justify-center items-center gap-y-10">
-          <div class="text-center flex flex-col gap-y-2">
+        <div
+          class="flex flex-col py-20 md:py-32 justify-center items-center gap-y-10 md:gap-y-52 bg"
+        >
+          <div class="text-center flex flex-col gap-y-2 md:gap-y-10">
             <h1
-              class="text-2xl text-[#696969]"
+              class="text-2xl md:text-4xl text-[#696969]"
               style="font-family: 'Inter', sans-serif; font-weight: 400"
             >
               Te ofrecemos un lugar para
             </h1>
             <h4
-              class="text-4xl text-[#383838]"
+              class="text-4xl md:text-7xl text-[#383838] md:px-60"
               style="font-family: 'Inter', sans-serif; font-weight: 700"
             >
               mejorar el día a día de más personas
@@ -45,166 +49,594 @@
           <a href="#contenido-slider">
             <img
               src="img/scroll-to.svg"
-              class="w-16 mx-auto md:w-full animate-bounce"
+              class="w-16 mx-auto md:w-16 animate-bounce"
               alt=""
           /></a>
         </div>
         <!--Hero end-->
 
         <!--Opcion sliders start-->
-        <div class="grid grid-cols-5 justify-center items-center py-4">
-          <div class="slider-active rounded-full w-10 p-1 mx-auto">
-            <img src="img/icon-innovar.svg" alt="" class="w-10" />
-          </div>
-          <div class="slider-noactive rounded-full w-10 p-1 mx-auto">
-            <img src="img/icon-construir.svg" alt="" class="w-10" />
-          </div>
-          <div class="slider-noactive rounded-full w-10 p-1 mx-auto">
-            <img src="img/icon-trabajar.svg" alt="" class="w-10" />
-          </div>
-          <div class="slider-noactive rounded-full w-10 p-1 mx-auto">
-            <img src="img/icon-estar.svg" alt="" class="w-10" />
-          </div>
-          <div class="slider-noactive rounded-full w-9 p-1 mx-auto">
-            <img src="img/icon-potenciar.svg" alt="" class="w-9" />
-          </div>
+        <div class="grid grid-cols-5 justify-center items-center py-4 md:px-64">
+          <!--1-->
+          <a
+            href="#slider-1"
+            class="slider-active rounded-full w-10 md:w-16 p-1 md:p-2 mx-auto"
+            onclick="toggleSliderActive(this)"
+          >
+            <img src="img/icon-innovar.svg" alt="" class="w-full" />
+          </a>
+          <!--1-->
+
+          <!--2-->
+          <a
+            href="#slider-2"
+            class="slider-noactive rounded-full w-10 md:w-16 p-1 md:p-2 mx-auto"
+            onclick="toggleSliderActive(this)"
+          >
+            <img src="img/icon-construir.svg" alt="" class="w-full" />
+          </a>
+          <!--2-->
+
+          <!--3-->
+          <a
+            href="#slider-3"
+            class="slider-noactive rounded-full w-10 md:w-16 p-1 md:p-2 mx-auto"
+            onclick="toggleSliderActive(this)"
+          >
+            <img src="img/icon-trabajar.svg" alt="" class="w-full" />
+          </a>
+          <!--3-->
+
+          <!--4-->
+          <a
+            href="#slider-4"
+            class="slider-noactive rounded-full w-10 md:w-16 p-1 md:p-2 mx-auto"
+            onclick="toggleSliderActive(this)"
+          >
+            <img src="img/icon-estar.svg" alt="" class="w-full" />
+          </a>
+          <!--4-->
+
+          <!--5-->
+          <a
+            href="#slider-5"
+            class="slider-noactive rounded-full w-9 md:w-14 p-1 md:p-2 mx-auto"
+            onclick="toggleSliderActive(this)"
+          >
+            <img src="img/icon-potenciar.svg" alt="" class="w-full" />
+          </a>
+          <!--5-->
         </div>
         <!--Opcion sliders end-->
       </div>
 
       <!--Contenido sliders start-->
-      <!--innovar start-->
+
       <div id="contenido-slider">
-        <div class="text-white bg-[#67B2A6]">
-          <div class="container mx-auto px-5">
+        <!--1-->
+        <div id="slider-1" class="block bg-[#67B2A6] md:h-[52rem] text-white">
+          <div class="flex justify-center items-center md:h-full">
             <div
-              class="flex flex-col gap-y-8 py-10 border-b border-[#FFFFFF80]"
+              class="container mx-auto px-5 max-w-screen-xl flex flex-col md:flex-row w-full"
             >
-              <div class="flex flex-col gap-y-2">
-                <h1
-                  class="text-xl"
+              <div
+                class="flex flex-col gap-y-8 py-10 border-b border-[#FFFFFF80] md:border-b-0 md:w-2/3 md:pr-52 md:justify-center"
+              >
+                <div class="flex flex-col gap-y-2 md:gap-y-8">
+                  <h1
+                    class="text-xl md:text-4xl"
+                    style="font-family: 'Inter', sans-serif; font-weight: 400"
+                  >
+                    Te ofrecemos un lugar para...
+                  </h1>
+                  <h4
+                    class="uppercase text-4xl md:text-7xl md:leading-[3.5rem]"
+                    style="font-family: 'Inter', sans-serif; font-weight: 800"
+                  >
+                    Innovar y evolucionar
+                  </h4>
+                </div>
+                <p
+                  class="text-base md:text-lg"
                   style="font-family: 'Inter', sans-serif; font-weight: 400"
                 >
-                  Te ofrecemos un lugar para...
-                </h1>
-                <h4
-                  class="uppercase text-4xl"
-                  style="font-family: 'Inter', sans-serif; font-weight: 800"
-                >
-                  Innovar y evolucionar
-                </h4>
+                  Hacemos más simple la vida de nuestros clientes, nos
+                  anticipamos a sus necesidades y creamos soluciones
+                  disruptivas. <br />
+                  <span
+                    style="font-family: 'Inter', sans-serif; font-weight: 700"
+                    >Tenemos un gran desafío, transformar la banca y la forma de
+                    hacer negocios</span
+                  >.
+                </p>
               </div>
-              <p
-                class="text-base"
-                style="font-family: 'Inter', sans-serif; font-weight: 400"
-              >
-                Hacemos más simple la vida de nuestros clientes, nos anticipamos
-                a sus necesidades y creamos soluciones disruptivas. <br />
-                <span style="font-family: 'Inter', sans-serif; font-weight: 700"
-                  >Tenemos un gran desafío, transformar la banca y la forma de
-                  hacer negocios</span
-                >.
-              </p>
-            </div>
-            <div class="py-10">
               <div
-                class="flex flex-col gap-y-5"
-                style="font-family: 'Inter', sans-serif; font-weight: 700"
+                class="py-10 md:w-1/3 md:pl-10 md:border-l border-[#FFFFFF80]"
               >
-                <img
-                  src="img/icon-innovar.svg"
-                  alt=""
-                  class="w-16 bg-white rounded-2xl p-2"
-                />
-                <div>
-                  <div class="flex gap-x-2 items-center">
-                    <img src="img/bullet.svg" alt="" /><span class="text-xl"
-                      >Aprendizaje continuo</span
-                    >
-                  </div>
-                  <div class="flex gap-x-2 items-center">
-                    <img src="img/bullet.svg" alt="" /><span class="text-xl"
-                      >Desafíos en equipo</span
-                    >
-                  </div>
-                  <div class="flex gap-x-2 items-center">
-                    <img src="img/bullet.svg" alt="" /><span class="text-xl"
-                      >On boarding</span
-                    >
-                  </div>
-                  <div class="flex gap-x-2 items-start">
-                    <img src="img/bullet.svg" alt="" /><span class="text-xl"
-                      >Canales de comunicación <br />
-                      horizontales</span
-                    >
-                  </div>
-                  <div class="flex gap-x-2 items-center">
-                    <img src="img/bullet.svg" alt="" /><span class="text-xl"
-                      >Performance</span
-                    >
-                  </div>
-                  <div class="flex gap-x-2 items-center">
-                    <img src="img/bullet.svg" alt="" /><span class="text-xl"
-                      >Hojas en blanco</span
-                    >
-                  </div>
-                  <div class="flex gap-x-2 items-center">
-                    <img src="img/bullet.svg" alt="" /><span class="text-xl"
-                      >Espacios de Coworking</span
-                    >
+                <div
+                  class="flex flex-col gap-y-5"
+                  style="font-family: 'Inter', sans-serif; font-weight: 700"
+                >
+                  <img
+                    src="img/icon-innovar.svg"
+                    alt=""
+                    class="w-16 bg-white rounded-2xl p-2 md:w-20"
+                  />
+                  <div class="flex flex-col gap-y-2 md:gap-y-4">
+                    <div class="flex gap-x-2 items-center">
+                      <img src="img/bullet.svg" alt="" /><span class="text-xl"
+                        >Aprendizaje continuo</span
+                      >
+                    </div>
+                    <div class="flex gap-x-2 items-center">
+                      <img src="img/bullet.svg" alt="" /><span class="text-xl"
+                        >Desafíos en equipo</span
+                      >
+                    </div>
+                    <div class="flex gap-x-2 items-center">
+                      <img src="img/bullet.svg" alt="" /><span class="text-xl"
+                        >On boarding</span
+                      >
+                    </div>
+                    <div class="flex gap-x-2 items-start">
+                      <img src="img/bullet.svg" alt="" /><span class="text-xl"
+                        >Canales de comunicación <br />
+                        horizontales</span
+                      >
+                    </div>
+                    <div class="flex gap-x-2 items-center">
+                      <img src="img/bullet.svg" alt="" /><span class="text-xl"
+                        >Performance</span
+                      >
+                    </div>
+                    <div class="flex gap-x-2 items-center">
+                      <img src="img/bullet.svg" alt="" /><span class="text-xl"
+                        >Hojas en blanco</span
+                      >
+                    </div>
+                    <div class="flex gap-x-2 items-center">
+                      <img src="img/bullet.svg" alt="" /><span class="text-xl"
+                        >Espacios de Coworking</span
+                      >
+                    </div>
                   </div>
                 </div>
               </div>
             </div>
           </div>
         </div>
+        <!--1-->
+
+        <!--2-->
+        <div id="slider-2" class="hidden bg-[#497FE7] md:h-[52rem] text-white">
+          <div class="flex justify-center items-center md:h-full">
+            <div
+              class="container mx-auto px-5 max-w-screen-xl flex flex-col md:flex-row w-full"
+            >
+              <div
+                class="flex flex-col gap-y-8 py-10 border-b border-[#FFFFFF80] md:border-b-0 md:w-2/3 md:pr-52 md:justify-center"
+              >
+                <div class="flex flex-col gap-y-2 md:gap-y-8">
+                  <h1
+                    class="text-xl md:text-4xl"
+                    style="font-family: 'Inter', sans-serif; font-weight: 400"
+                  >
+                    Te ofrecemos un lugar para...
+                  </h1>
+                  <h4
+                    class="uppercase text-4xl md:text-7xl md:leading-[3.5rem]"
+                    style="font-family: 'Inter', sans-serif; font-weight: 800"
+                  >
+                    Construir en equipo
+                  </h4>
+                </div>
+                <p
+                  class="text-base md:text-lg"
+                  style="font-family: 'Inter', sans-serif; font-weight: 400"
+                >
+                  Todos nuestros clientes tienen necesidades distintas, por eso
+                  creemos en las fortalezas de los equipos diversos para diseñar
+                  experiencias increíbles. <br />
+                  <span
+                    style="font-family: 'Inter', sans-serif; font-weight: 700"
+                    >El trabajo colaborativo nos nutre, nos hace crecer y nos
+                    potencia.</span
+                  >
+                </p>
+              </div>
+              <div
+                class="py-10 md:w-1/3 md:pl-10 md:border-l border-[#FFFFFF80]"
+              >
+                <div
+                  class="flex flex-col gap-y-5"
+                  style="font-family: 'Inter', sans-serif; font-weight: 700"
+                >
+                  <img
+                    src="img/icon-construir.svg"
+                    alt=""
+                    class="w-16 bg-white rounded-2xl p-2 md:w-20"
+                  />
+                  <div class="flex flex-col gap-y-2 md:gap-y-4">
+                    <div class="flex gap-x-2 items-center">
+                      <img src="img/bullet.svg" alt="" /><span class="text-xl"
+                        >Metodologías ágiles</span
+                      >
+                    </div>
+                    <div class="flex gap-x-2 items-center">
+                      <img src="img/bullet.svg" alt="" /><span class="text-xl"
+                        >Equipos colaborativos y <br />
+                        multidisciplinarios</span
+                      >
+                    </div>
+                    <div class="flex gap-x-2 items-center">
+                      <img src="img/bullet.svg" alt="" /><span class="text-xl"
+                        >Espacios para <br />conocer la estrategia</span
+                      >
+                    </div>
+                    <div class="flex gap-x-2 items-start">
+                      <img src="img/bullet.svg" alt="" /><span class="text-xl"
+                        >Herramientas cloud</span
+                      >
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!--2-->
+
+        <!--3-->
+        <div id="slider-3" class="hidden bg-[#EEACC2] md:h-[52rem] text-white">
+          <div class="flex justify-center items-center md:h-full">
+            <div
+              class="container mx-auto px-5 max-w-screen-xl flex flex-col md:flex-row w-full"
+            >
+              <div
+                class="flex flex-col gap-y-8 py-10 border-b border-[#FFFFFF80] md:border-b-0 md:w-2/3 md:pr-52 md:justify-center"
+              >
+                <div class="flex flex-col gap-y-2 md:gap-y-8">
+                  <h1
+                    class="text-xl md:text-4xl"
+                    style="font-family: 'Inter', sans-serif; font-weight: 400"
+                  >
+                    Te ofrecemos un lugar para...
+                  </h1>
+                  <h4
+                    class="uppercase text-4xl md:text-7xl md:leading-[3.5rem]"
+                    style="font-family: 'Inter', sans-serif; font-weight: 800"
+                  >
+                    Trabajar con flexibilidad
+                  </h4>
+                </div>
+                <p
+                  class="text-base md:text-lg"
+                  style="font-family: 'Inter', sans-serif; font-weight: 400"
+                >
+                  Estar donde están los clientes nos desafía a diseñar las
+                  mejores experiencias. Por eso, nuestras modalidades de trabajo
+                  están pensadas para potenciar a cada persona del equipo
+                  Galicia.<br />
+                  <span
+                    style="font-family: 'Inter', sans-serif; font-weight: 700"
+                    >Adaptamos las formas y espacios de trabajo para crear
+                    soluciones de valor que nos hagan ser más eficientes e
+                    impacten en la cotidianeidad de nuestros millones de
+                    clientes.</span
+                  >
+                </p>
+              </div>
+              <div
+                class="py-10 md:w-1/3 md:pl-10 md:border-l border-[#FFFFFF80]"
+              >
+                <div
+                  class="flex flex-col gap-y-5"
+                  style="font-family: 'Inter', sans-serif; font-weight: 700"
+                >
+                  <img
+                    src="img/icon-trabajar.svg"
+                    alt=""
+                    class="w-16 bg-white rounded-2xl p-2 md:w-20"
+                  />
+                  <div class="flex flex-col gap-y-2 md:gap-y-4">
+                    <div class="flex gap-x-2 items-center">
+                      <img src="img/bullet.svg" alt="" /><span class="text-xl"
+                        >Metodologías ágiles</span
+                      >
+                    </div>
+                    <div class="flex gap-x-2 items-center">
+                      <img src="img/bullet.svg" alt="" /><span class="text-xl"
+                        >Equipos colaborativos y <br />
+                        multidisciplinarios</span
+                      >
+                    </div>
+                    <div class="flex gap-x-2 items-center">
+                      <img src="img/bullet.svg" alt="" /><span class="text-xl"
+                        >Espacios para <br />conocer la estrategia</span
+                      >
+                    </div>
+                    <div class="flex gap-x-2 items-start">
+                      <img src="img/bullet.svg" alt="" /><span class="text-xl"
+                        >Herramientas cloud</span
+                      >
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!--3-->
+
+        <!--4-->
+        <div id="slider-4" class="hidden bg-[#E96D2D] md:h-[52rem] text-white">
+          <div class="flex justify-center items-center md:h-full">
+            <div
+              class="container mx-auto px-5 max-w-screen-xl flex flex-col md:flex-row w-full"
+            >
+              <div
+                class="flex flex-col gap-y-8 py-10 border-b border-[#FFFFFF80] md:border-b-0 md:w-2/3 md:pr-52 md:justify-center"
+              >
+                <div class="flex flex-col gap-y-2 md:gap-y-8">
+                  <h1
+                    class="text-xl md:text-4xl"
+                    style="font-family: 'Inter', sans-serif; font-weight: 400"
+                  >
+                    Te ofrecemos un lugar para...
+                  </h1>
+                  <h4
+                    class="uppercase text-4xl md:text-7xl md:leading-[3.5rem]"
+                    style="font-family: 'Inter', sans-serif; font-weight: 800"
+                  >
+                    Estar bien
+                  </h4>
+                </div>
+                <p
+                  class="text-base md:text-lg"
+                  style="font-family: 'Inter', sans-serif; font-weight: 400"
+                >
+                  Para construir un negocio centrado 100% en nuestros clientes,
+                  necesitamos de tu mejor versión. <br />
+                  <span
+                    style="font-family: 'Inter', sans-serif; font-weight: 700"
+                    >Buscamos espacios de conexión y cuidamos tu bienestar.
+                    Construimos una cultura que reconoce y celebra los hitos que
+                    logramos.</span
+                  >
+                </p>
+              </div>
+              <div
+                class="py-10 md:w-1/3 md:pl-10 md:border-l border-[#FFFFFF80]"
+              >
+                <div
+                  class="flex flex-col gap-y-5"
+                  style="font-family: 'Inter', sans-serif; font-weight: 700"
+                >
+                  <img
+                    src="img/icon-estar.svg"
+                    alt=""
+                    class="w-16 bg-white rounded-2xl p-2 md:w-20"
+                  />
+                  <div class="flex flex-col gap-y-2 md:gap-y-4">
+                    <div class="flex gap-x-2 items-center">
+                      <img src="img/bullet.svg" alt="" /><span class="text-xl"
+                        >Días festivos</span
+                      >
+                    </div>
+                    <div class="flex gap-x-2 items-center">
+                      <img src="img/bullet.svg" alt="" /><span class="text-xl"
+                        >Regalos de cumpleaños</span
+                      >
+                    </div>
+                    <div class="flex gap-x-2 items-center">
+                      <img src="img/bullet.svg" alt="" /><span class="text-xl"
+                        >Cine y teatro</span
+                      >
+                    </div>
+                    <div class="flex gap-x-2 items-center">
+                      <img src="img/bullet.svg" alt="" /><span class="text-xl"
+                        >Full Beneficios</span
+                      >
+                    </div>
+                    <div class="flex gap-x-2 items-start">
+                      <img src="img/bullet.svg" alt="" /><span class="text-xl"
+                        >Encuentros</span
+                      >
+                    </div>
+                    <div class="flex gap-x-2 items-center">
+                      <img src="img/bullet.svg" alt="" /><span class="text-xl"
+                        >Logros y Cultura</span
+                      >
+                    </div>
+                    <div class="flex gap-x-2 items-center">
+                      <img src="img/bullet.svg" alt="" /><span class="text-xl"
+                        >Licencias familiares</span
+                      >
+                    </div>
+                    <div class="flex gap-x-2 items-center">
+                      <img src="img/bullet.svg" alt="" /><span class="text-xl"
+                        >All kids</span
+                      >
+                    </div>
+                    <div class="flex gap-x-2 items-center">
+                      <img src="img/bullet.svg" alt="" /><span class="text-xl"
+                        >Rest & Relax</span
+                      >
+                    </div>
+                    <div class="flex gap-x-2 items-center">
+                      <img src="img/bullet.svg" alt="" /><span class="text-xl"
+                        >Gym Pass</span
+                      >
+                    </div>
+                    <div class="flex gap-x-2 items-center">
+                      <img src="img/bullet.svg" alt="" /><span class="text-xl"
+                        >Club del banco</span
+                      >
+                    </div>
+                    <div class="flex gap-x-2 items-center">
+                      <img src="img/bullet.svg" alt="" /><span class="text-xl"
+                        >Cuidados especiales</span
+                      >
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!--4-->
+
+        <!--5-->
+        <div id="slider-5" class="hidden bg-[#574D89] md:h-[52rem] text-white">
+          <div class="flex justify-center items-center md:h-full">
+            <div
+              class="container mx-auto px-5 max-w-screen-xl flex flex-col md:flex-row w-full"
+            >
+              <div
+                class="flex flex-col gap-y-8 py-10 border-b border-[#FFFFFF80] md:border-b-0 md:w-2/3 md:pr-52"
+              >
+                <div class="flex flex-col gap-y-2 md:gap-y-8">
+                  <h1
+                    class="text-xl md:text-4xl"
+                    style="font-family: 'Inter', sans-serif; font-weight: 400"
+                  >
+                    Te ofrecemos un lugar para...
+                  </h1>
+                  <h4
+                    class="uppercase text-4xl md:text-7xl md:leading-[3.5rem]"
+                    style="font-family: 'Inter', sans-serif; font-weight: 800"
+                  >
+                    Potenciar el talento
+                  </h4>
+                </div>
+                <p
+                  class="text-base md:text-lg"
+                  style="font-family: 'Inter', sans-serif; font-weight: 400"
+                >
+                  Nuestros clientes evolucionan, y nosotros crecemos con ellos
+                  para darles el valor que necesitan y acompañarlos en su
+                  cotidianeidad.<br />
+                  <span
+                    style="font-family: 'Inter', sans-serif; font-weight: 700"
+                    >En Galicia vas a encontrar herramientas para transformarte
+                    y que ese camino, nos transforme a todos.</span
+                  >
+                </p>
+              </div>
+              <div
+                class="py-10 md:w-1/3 md:pl-10 md:border-l border-[#FFFFFF80]"
+              >
+                <div
+                  class="flex flex-col gap-y-5"
+                  style="font-family: 'Inter', sans-serif; font-weight: 700"
+                >
+                  <img
+                    src="img/icon-potenciar.svg"
+                    alt=""
+                    class="w-16 bg-white rounded-2xl p-2 md:w-20"
+                  />
+                  <div class="flex flex-col gap-y-2 md:gap-y-4">
+                    <div class="flex gap-x-2 items-center">
+                      <img src="img/bullet.svg" alt="" /><span class="text-xl"
+                        >Formación de líderes</span
+                      >
+                    </div>
+                    <div class="flex gap-x-2 items-center">
+                      <img src="img/bullet.svg" alt="" /><span class="text-xl"
+                        >Desarrollo de talentos</span
+                      >
+                    </div>
+                    <div class="flex gap-x-2 items-center">
+                      <img src="img/bullet.svg" alt="" /><span class="text-xl"
+                        >Becas de Grado</span
+                      >
+                    </div>
+                    <div class="flex gap-x-2 items-start">
+                      <img src="img/bullet.svg" alt="" /><span class="text-xl"
+                        >Becas de Posgrado</span
+                      >
+                    </div>
+                    <div class="flex gap-x-2 items-center">
+                      <img src="img/bullet.svg" alt="" /><span class="text-xl"
+                        >Idiomas</span
+                      >
+                    </div>
+                    <div class="flex gap-x-2 items-center">
+                      <img src="img/bullet.svg" alt="" /><span class="text-xl"
+                        >Descuento en Universidades</span
+                      >
+                    </div>
+                    <div class="flex gap-x-2 items-center">
+                      <img src="img/bullet.svg" alt="" /><span class="text-xl"
+                        >Plataformas e-learning</span
+                      >
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!--5-->
       </div>
-      <!--innovar end-->
+
       <!--Contenido sliders end-->
     </section>
-    <footer>
-      <div class="container mx-auto px-5 py-10">
-        <div class="flex flex-col gap-y-10">
+    <footer class="bg-[#f2f2f2]">
+      <div
+        class="container mx-auto px-5 py-10 max-w-screen-xl flex flex-col md:flex-row gap-y-5 w-full md:justify-between"
+      >
+        <div class="flex flex-col gap-y-10 md:justify-center">
           <div class="px-16">
             <a
               href="#body"
-              class="flex text-[#FA6400] hover:border-transparent hover:text-white hover:bg-[#ed8038] transition ease-in-out duration-500 gap-x-2 text-xl justify-center border-2 border-[#FA6400] rounded-md"
+              class="flex text-[#FA6400] md:px-5 md:hover:border-transparent md:hover:text-white md:hover:bg-[#ed8038] transition ease-in-out duration-500 gap-x-2 text-xl justify-center border-2 border-[#FA6400] rounded-md"
               style="font-family: 'Inter', sans-serif; font-weight: 700"
             >
               <span>Volver arriba</span><img src="img/go-top.svg" alt="" />
             </a>
           </div>
-          <div class="px-36">
+          <div class="px-36 block md:hidden">
             <div class="border-b border-[#FA6400]"></div>
           </div>
-          <div class="mx-auto">
+        </div>
+        <div class="flex flex-col md:flex-row gap-y-5">
+          <div
+            class="text-center md:flex md:flex-col md:justify-center md:pr-10 md:border-r md:border-[#FA6400] h-full"
+          >
             <h1
               class="text-lg text-[#FA6400]"
               style="font-family: 'Inter', sans-serif; font-weight: 600"
             >
               Cómo sumarte
             </h1>
-          </div>
-        </div>
-        <div class="flex flex-col gap-y-5">
-          <div class="mx-auto">
             <h1
-              class="text-sm text-[#FA6400]"
+              class="text-sm text-[#FA6400] block md:hidden"
               style="font-family: 'Inter', sans-serif; font-weight: 500"
             >
               Seguínos en nuestras redes:
             </h1>
           </div>
-          <div class="grid grid-cols-6 justify-center items-center px-10">
-            <img src="img/icon-linkedin.png" alt="" class="mx-auto" />
-            <img src="img/icon-ig.png" alt="" class="mx-auto" />
-            <img src="img/icon-twitter.png" alt="" class="mx-auto" />
-            <img src="img/icon-fb.png" alt="" class="mx-auto" /><img
-              src="img/icon-yt.png"
-              alt=""
-              class="mx-auto"
-            />
-            <img src="img/icon-web.svg" alt="" class="mx-auto" />
+          <div class="md:flex md:flex-col md:gap-y-2">
+            <h1
+              class="text-sm text-[#FA6400] hidden md:block text-center md:pr-9"
+              style="font-family: 'Inter', sans-serif; font-weight: 500"
+            >
+              Seguínos en nuestras redes:
+            </h1>
+            <div
+              class="grid grid-cols-6 justify-center items-center px-10 md:gap-x-2"
+            >
+              <img src="img/icon-linkedin.png" alt="" class="mx-auto" />
+              <img src="img/icon-ig.png" alt="" class="mx-auto" />
+              <img src="img/icon-twitter.png" alt="" class="mx-auto" />
+              <img src="img/icon-fb.png" alt="" class="mx-auto" /><img
+                src="img/icon-yt.png"
+                alt=""
+                class="mx-auto"
+              />
+              <img src="img/icon-web.svg" alt="" class="mx-auto" />
+            </div>
           </div>
         </div>
       </div>
