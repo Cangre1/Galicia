@@ -1,6 +1,3 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
-@import url("./src/fonts/BasisGrotesquePro-Regular.ttf");
-@import url("./src/fonts/Recoleta-Regular.ttf");
