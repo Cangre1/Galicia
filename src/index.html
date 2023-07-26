@@ -1,17 +1,214 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="scroll-smooth">
   <head>
     <meta charset="utf-8" />
-    <title>tailwind starter</title>
+    <title>Galicia</title>
     <meta name="description" content="Basic HTML/Tailwind starter" />
     <meta name="author" content="Daily Dev Tips" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
-    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+    <link rel="icon" type="image/png" href="img/icon-galicia.svg" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="styles.css" />
   </head>
 
-  <body>
+  <body id="body">
+    <!--Nav start-->
+    <header class="container mx-auto px-5 py-3">
+      <img src="img/icon-galicia.svg" class="w-32 md:w-full" alt="" />
+    </header>
+    <!--Nav end-->
+
+    <!--Contenido-->
+    <section>
+      <div class="container mx-auto px-5 bg-[#f2f2f2]">
+        <!--Hero start-->
+        <div class="flex flex-col py-20 justify-center items-center gap-y-10">
+          <div class="text-center flex flex-col gap-y-2">
+            <h1
+              class="text-2xl text-[#696969]"
+              style="font-family: 'Inter', sans-serif; font-weight: 400"
+            >
+              Te ofrecemos un lugar para
+            </h1>
+            <h4
+              class="text-4xl text-[#383838]"
+              style="font-family: 'Inter', sans-serif; font-weight: 700"
+            >
+              mejorar el día a día de más personas
+            </h4>
+          </div>
+          <a href="#contenido-slider">
+            <img
+              src="img/scroll-to.svg"
+              class="w-16 mx-auto md:w-full animate-bounce"
+              alt=""
+          /></a>
+        </div>
+        <!--Hero end-->
+
+        <!--Opcion sliders start-->
+        <div class="grid grid-cols-5 justify-center items-center py-4">
+          <div class="slider-active rounded-full w-10 p-1 mx-auto">
+            <img src="img/icon-innovar.svg" alt="" class="w-10" />
+          </div>
+          <div class="slider-noactive rounded-full w-10 p-1 mx-auto">
+            <img src="img/icon-construir.svg" alt="" class="w-10" />
+          </div>
+          <div class="slider-noactive rounded-full w-10 p-1 mx-auto">
+            <img src="img/icon-trabajar.svg" alt="" class="w-10" />
+          </div>
+          <div class="slider-noactive rounded-full w-10 p-1 mx-auto">
+            <img src="img/icon-estar.svg" alt="" class="w-10" />
+          </div>
+          <div class="slider-noactive rounded-full w-9 p-1 mx-auto">
+            <img src="img/icon-potenciar.svg" alt="" class="w-9" />
+          </div>
+        </div>
+        <!--Opcion sliders end-->
+      </div>
+
+      <!--Contenido sliders start-->
+      <!--innovar start-->
+      <div id="contenido-slider">
+        <div class="text-white bg-[#67B2A6]">
+          <div class="container mx-auto px-5">
+            <div
+              class="flex flex-col gap-y-8 py-10 border-b border-[#FFFFFF80]"
+            >
+              <div class="flex flex-col gap-y-2">
+                <h1
+                  class="text-xl"
+                  style="font-family: 'Inter', sans-serif; font-weight: 400"
+                >
+                  Te ofrecemos un lugar para...
+                </h1>
+                <h4
+                  class="uppercase text-4xl"
+                  style="font-family: 'Inter', sans-serif; font-weight: 800"
+                >
+                  Innovar y evolucionar
+                </h4>
+              </div>
+              <p
+                class="text-base"
+                style="font-family: 'Inter', sans-serif; font-weight: 400"
+              >
+                Hacemos más simple la vida de nuestros clientes, nos anticipamos
+                a sus necesidades y creamos soluciones disruptivas. <br />
+                <span style="font-family: 'Inter', sans-serif; font-weight: 700"
+                  >Tenemos un gran desafío, transformar la banca y la forma de
+                  hacer negocios</span
+                >.
+              </p>
+            </div>
+            <div class="py-10">
+              <div
+                class="flex flex-col gap-y-5"
+                style="font-family: 'Inter', sans-serif; font-weight: 700"
+              >
+                <img
+                  src="img/icon-innovar.svg"
+                  alt=""
+                  class="w-16 bg-white rounded-2xl p-2"
+                />
+                <div>
+                  <div class="flex gap-x-2 items-center">
+                    <img src="img/bullet.svg" alt="" /><span class="text-xl"
+                      >Aprendizaje continuo</span
+                    >
+                  </div>
+                  <div class="flex gap-x-2 items-center">
+                    <img src="img/bullet.svg" alt="" /><span class="text-xl"
+                      >Desafíos en equipo</span
+                    >
+                  </div>
+                  <div class="flex gap-x-2 items-center">
+                    <img src="img/bullet.svg" alt="" /><span class="text-xl"
+                      >On boarding</span
+                    >
+                  </div>
+                  <div class="flex gap-x-2 items-start">
+                    <img src="img/bullet.svg" alt="" /><span class="text-xl"
+                      >Canales de comunicación <br />
+                      horizontales</span
+                    >
+                  </div>
+                  <div class="flex gap-x-2 items-center">
+                    <img src="img/bullet.svg" alt="" /><span class="text-xl"
+                      >Performance</span
+                    >
+                  </div>
+                  <div class="flex gap-x-2 items-center">
+                    <img src="img/bullet.svg" alt="" /><span class="text-xl"
+                      >Hojas en blanco</span
+                    >
+                  </div>
+                  <div class="flex gap-x-2 items-center">
+                    <img src="img/bullet.svg" alt="" /><span class="text-xl"
+                      >Espacios de Coworking</span
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!--innovar end-->
+      <!--Contenido sliders end-->
+    </section>
+    <footer>
+      <div class="container mx-auto px-5 py-10">
+        <div class="flex flex-col gap-y-10">
+          <div class="px-16">
+            <a
+              href="#body"
+              class="flex text-[#FA6400] hover:border-transparent hover:text-white hover:bg-[#ed8038] transition ease-in-out duration-500 gap-x-2 text-xl justify-center border-2 border-[#FA6400] rounded-md"
+              style="font-family: 'Inter', sans-serif; font-weight: 700"
+            >
+              <span>Volver arriba</span><img src="img/go-top.svg" alt="" />
+            </a>
+          </div>
+          <div class="px-36">
+            <div class="border-b border-[#FA6400]"></div>
+          </div>
+          <div class="mx-auto">
+            <h1
+              class="text-lg text-[#FA6400]"
+              style="font-family: 'Inter', sans-serif; font-weight: 600"
+            >
+              Cómo sumarte
+            </h1>
+          </div>
+        </div>
+        <div class="flex flex-col gap-y-5">
+          <div class="mx-auto">
+            <h1
+              class="text-sm text-[#FA6400]"
+              style="font-family: 'Inter', sans-serif; font-weight: 500"
+            >
+              Seguínos en nuestras redes:
+            </h1>
+          </div>
+          <div class="grid grid-cols-6 justify-center items-center px-10">
+            <img src="img/icon-linkedin.png" alt="" class="mx-auto" />
+            <img src="img/icon-ig.png" alt="" class="mx-auto" />
+            <img src="img/icon-twitter.png" alt="" class="mx-auto" />
+            <img src="img/icon-fb.png" alt="" class="mx-auto" /><img
+              src="img/icon-yt.png"
+              alt=""
+              class="mx-auto"
+            />
+            <img src="img/icon-web.svg" alt="" class="mx-auto" />
+          </div>
+        </div>
+      </div>
+    </footer>
     <script src="./js/index.js"></script>
   </body>
 </html>

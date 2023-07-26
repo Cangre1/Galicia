@@ -1,0 +1,9 @@
+<svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="Web">
+<circle id="Ellipse 37" cx="16" cy="16" r="16" fill="#67B2A6"/>
+<g id="Group">
+<path id="Vector" d="M16 24C20.4183 24 24 20.4183 24 16C24 11.5817 20.4183 8 16 8C11.5817 8 8 11.5817 8 16C8 20.4183 11.5817 24 16 24Z" stroke="white" stroke-linecap="round" stroke-linejoin="round"/>
+<path id="Vector_2" d="M8 16H24M19.0769 16C18.9258 18.9255 17.8482 21.7272 16 24C14.1518 21.7272 13.0742 18.9255 12.9231 16C13.0742 13.0745 14.1518 10.2728 16 8C17.8482 10.2728 18.9258 13.0745 19.0769 16Z" stroke="white" stroke-linecap="round" stroke-linejoin="round"/>
+</g>
+</g>
+</svg>
