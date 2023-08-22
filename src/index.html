@@ -13,6 +13,10 @@
       href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap"
       rel="stylesheet"
     />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper/swiper-bundle.min.css"
+    />
     <link rel="stylesheet" href="styles.css" />
   </head>
 
@@ -27,32 +31,291 @@
 
     <!--Contenido-->
     <section class="bg-[#f2f2f2]">
-      <div class="container mx-auto px-5 max-w-screen-xl">
+      <div class="container mx-auto px-5 max-w-screen-xl overflow-hidden">
         <!--Hero slider mob start-->
-        <div
-          class="md:hidden flex flex-col justify-start items-center h-screen"
-        >
-          <div
-            class="text-center flex flex-col gap-y-5 md:gap-y-10 bg-blue-400"
-          >
-            <h1
-              class="text-2xl md:text-4xl text-[#696969]"
-              style="font-family: 'Inter', sans-serif; font-weight: 400"
-            >
-              Te ofrecemos un lugar para
-            </h1>
-            <h4
-              class="text-4xl md:text-7xl text-[#383838] md:px-60"
-              style="font-family: 'Inter', sans-serif; font-weight: 700"
-            >
-              mejorar el día a día de más personas
-            </h4>
+        <div class="md:hidden h-screen">
+          <div class="flex flex-col justify-start items-center pt-10 pb-10">
+            <div class="text-center flex flex-col gap-y-1">
+              <h1
+                class="text-lg text-[#696969]"
+                style="font-family: 'Inter', sans-serif; font-weight: 400"
+              >
+                Te ofrecemos un lugar para
+              </h1>
+              <h4
+                class="text-3xl text-[#383838] leading-10"
+                style="font-family: 'Inter', sans-serif; font-weight: 700"
+              >
+                mejorar el día a día de más personas
+              </h4>
+            </div>
+          </div>
+          <div class="swiper-container">
+            <div class="swiper-wrapper">
+              <!--1-->
+              <div class="swiper-slide w-full rounded-xl shadow-2xl">
+                <div class="card-img relative">
+                  <div
+                    class="text-card absolute w-full h-full bg-[#E96D2D] z-40 bg-opacity-80 hidden p-5 rounded-xl"
+                  >
+                    <div class="flex flex-col gap-y-4">
+                      <div class="flex flex-col gap-y-3">
+                        <div>
+                          <img src="img/Comillas.svg" alt="" class="w-6" />
+                        </div>
+                        <div>
+                          <p
+                            class="text-white text-base leading-5"
+                            style="
+                              font-family: 'Inter', sans-serif;
+                              font-weight: 600;
+                            "
+                          >
+                            Queremos abrir otro negocio dentro de la gastronomía
+                            y estamos construyendo nuestra casa, así que ahora
+                            cada ahorro va destinado a esos proyectos.
+                          </p>
+                        </div>
+                      </div>
+                      <div>
+                        <span
+                          class="text-white text-sm"
+                          style="
+                            font-family: 'Inter', sans-serif;
+                            font-weight: 700;
+                          "
+                          >Luciana Pérez</span
+                        >
+                        <p
+                          class="text-white text-xs leading-[0.88rem]"
+                          style="
+                            font-family: 'Inter', sans-serif;
+                            font-weight: 500;
+                          "
+                        >
+                          Socia minimercado Sport! <br />
+                          en Axion Energy
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  <div
+                    class="arrow-card absolute bottom-0 right-0 bg-[#E96D2D] p-2 z-50 hidden rounded-br-xl"
+                  >
+                    <img src="img/arrow-white.png" alt="" />
+                  </div>
+                  <img
+                    src="img/img-slide-1.png"
+                    alt=""
+                    class="w-full object-cover rounded-xl"
+                  />
+                  <div
+                    class="absolute bottom-0 right-0 bg-white p-2 z-30 rounded-br-xl"
+                  >
+                    <img src="img/arrow-img-1.png" alt="" />
+                  </div>
+                </div>
+              </div>
+
+              <!--2-->
+              <div class="swiper-slide w-full rounded-xl shadow-2xl">
+                <div class="card-img row-span-2 relative">
+                  <div
+                    class="text-card absolute w-full h-full bg-[#574D89] z-40 bg-opacity-80 hidden p-5 rounded-xl"
+                  >
+                    <div class="flex flex-col gap-y-4">
+                      <div class="flex flex-col gap-y-3">
+                        <div>
+                          <img src="img/Comillas.svg" alt="" class="w-6" />
+                        </div>
+                        <div>
+                          <p
+                            class="text-white text-base leading-5"
+                            style="
+                              font-family: 'Inter', sans-serif;
+                              font-weight: 600;
+                            "
+                          >
+                            Mi prioridad es mantener abierto el taller.
+                            Comprarme maquinaria más moderna me ahorraría mucho
+                            tiempo para crecer y producir más.
+                          </p>
+                        </div>
+                      </div>
+                      <div>
+                        <span
+                          class="text-white text-sm"
+                          style="
+                            font-family: 'Inter', sans-serif;
+                            font-weight: 700;
+                          "
+                          >Daniel Calvi</span
+                        >
+                        <p
+                          class="text-white text-xs leading-[0.88rem]"
+                          style="
+                            font-family: 'Inter', sans-serif;
+                            font-weight: 500;
+                          "
+                        >
+                          Dueño de Hornos Calvi
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  <div
+                    class="arrow-card absolute bottom-0 right-0 bg-[#574D89] p-2 z-50 hidden rounded-br-xl"
+                  >
+                    <img src="img/arrow-white.png" alt="" />
+                  </div>
+                  <img
+                    src="img/img-slide-2.png"
+                    alt=""
+                    class="w-full object-cover rounded-xl"
+                  />
+                  <div
+                    class="absolute bottom-0 right-0 bg-white p-2 rounded-br-xl"
+                  >
+                    <img src="img/arrow-img-4.png" alt="" />
+                  </div>
+                </div>
+              </div>
+
+              <!--3-->
+              <div class="swiper-slide w-full rounded-xl shadow-2xl">
+                <div class="card-img relative">
+                  <div
+                    class="text-card absolute w-full h-full bg-[#67B2A6] z-40 bg-opacity-80 hidden p-5 rounded-xl"
+                  >
+                    <div class="flex flex-col gap-y-4">
+                      <div class="flex flex-col gap-y-3">
+                        <div>
+                          <img src="img/Comillas.svg" alt="" class="w-6" />
+                        </div>
+                        <div>
+                          <p
+                            class="text-white text-base leading-5"
+                            style="
+                              font-family: 'Inter', sans-serif;
+                              font-weight: 600;
+                            "
+                          >
+                            Todo el sobrante de dinero no lo ahorro, invierto en
+                            mercadería para poder darle un mejor servicio a mis
+                            clientes.
+                          </p>
+                        </div>
+                      </div>
+                      <div>
+                        <span
+                          class="text-white text-sm"
+                          style="
+                            font-family: 'Inter', sans-serif;
+                            font-weight: 700;
+                          "
+                          >Noemí Sánchez</span
+                        >
+                        <p
+                          class="text-white text-xs leading-[0.88rem]"
+                          style="
+                            font-family: 'Inter', sans-serif;
+                            font-weight: 500;
+                          "
+                        >
+                          Comerciante
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  <div
+                    class="arrow-card absolute bottom-0 right-0 bg-[#67B2A6] p-2 z-50 hidden rounded-br-xl"
+                  >
+                    <img src="img/arrow-white.png" alt="" />
+                  </div>
+                  <img
+                    src="img/img-slide-3.png"
+                    alt=""
+                    class="w-full object-cover rounded-xl"
+                  />
+                  <div
+                    class="absolute bottom-0 right-0 bg-white p-2 rounded-br-xl"
+                  >
+                    <img src="img/arrow-img-3.png" alt="" />
+                  </div>
+                </div>
+              </div>
+
+              <!--4-->
+              <div class="swiper-slide w-full rounded-xl shadow-2xl">
+                <div class="card-img relative">
+                  <div
+                    class="text-card absolute w-full h-full bg-[#497FE7] z-40 bg-opacity-80 hidden p-5 rounded-xl"
+                  >
+                    <div class="flex flex-col gap-y-4">
+                      <div class="flex flex-col gap-y-3">
+                        <div>
+                          <img src="img/Comillas.svg" alt="" class="w-6" />
+                        </div>
+                        <div>
+                          <p
+                            class="text-white text-base leading-5"
+                            style="
+                              font-family: 'Inter', sans-serif;
+                              font-weight: 600;
+                            "
+                          >
+                            Cuanto más tiempo planificamos, entendemos que
+                            llevamos el negocio de la mejor manera. Nos da mayor
+                            visibilidad y posibilidad de llevar a cabo nuestros
+                            proyectos
+                          </p>
+                        </div>
+                      </div>
+                      <div>
+                        <span
+                          class="text-white text-sm"
+                          style="
+                            font-family: 'Inter', sans-serif;
+                            font-weight: 700;
+                          "
+                          >Felipe Álvarez</span
+                        >
+                        <p
+                          class="text-white text-xs leading-[0.88rem]"
+                          style="
+                            font-family: 'Inter', sans-serif;
+                            font-weight: 500;
+                          "
+                        >
+                          Dueño del restaurante Manteca
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  <div
+                    class="arrow-card absolute bottom-0 right-0 bg-[#497FE7] p-2 z-50 hidden rounded-br-xl"
+                  >
+                    <img src="img/arrow-white.png" alt="" />
+                  </div>
+                  <img
+                    src="img/img-slide-4.png"
+                    alt=""
+                    class="w-full object-cover rounded-xl"
+                  />
+                  <div
+                    class="absolute bottom-0 right-0 bg-white p-2 rounded-br-xl"
+                  >
+                    <img src="img/arrow-img-2.png" alt="" />
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
 
           <a href="#options">
             <img
               src="img/scroll-to.svg"
-              class="w-16 mx-auto md:w-16 animate-bounce"
+              class="w-12 mx-auto animate-bounce pt-12"
               alt=""
           /></a>
         </div>
@@ -63,8 +326,9 @@
           <div
             class="grid grid-cols-[2fr,1.5fr,1fr] grid-rows-[40%,38%] gap-4 mx-auto pt-7 h-screen relative"
           >
+            <!--1-->
             <div class="pt-7">
-              <div class="">
+              <div class="flex flex-col gap-y-5">
                 <span
                   class="text-[#696969] md:text-base xl:text-[1.6rem]"
                   style="font-family: 'Inter', sans-serif; font-weight: 400"
@@ -74,14 +338,15 @@
                   class="text-[#383838] text-4xl xl:text-[3.5rem] xl:leading-[3.72rem] md:pr-10 xl:pr-32"
                   style="font-family: 'Inter', sans-serif; font-weight: 700"
                 >
-                  Mejorar el día a día de más personas
+                  mejorar el día a día de más personas
                 </h1>
               </div>
             </div>
-            <div id="card-img-1" class="relative">
+
+            <!--2-->
+            <div class="card-img relative">
               <div
-                id="text-card-1"
-                class="absolute w-full h-full bg-[#E96D2D] z-40 bg-opacity-80 hidden p-5 rounded-xl"
+                class="text-card absolute w-full h-full bg-[#E96D2D] z-40 p-5 rounded-xl hidden bg-opacity-0 hover:bg-opacity-80 opacity-0 hover:opacity-100"
               >
                 <div class="flex flex-col md:gap-y-2 xl:gap-y-4">
                   <div class="flex flex-col gap-y-1 xl:gap-y-3">
@@ -113,7 +378,7 @@
                       >Luciana Pérez</span
                     >
                     <p
-                      class="text-white text-xs xl:text-base leading-[1.125rem]"
+                      class="text-white text-xs xl:text-base xl:leading-[1.125rem]"
                       style="font-family: 'Inter', sans-serif; font-weight: 500"
                     >
                       Socia minimercado Sport! <br />
@@ -123,8 +388,7 @@
                 </div>
               </div>
               <div
-                id="arrow-card-1"
-                class="absolute bottom-0 right-0 bg-[#E96D2D] p-2 z-50 hidden rounded-br-xl"
+                class="arrow-card absolute bottom-0 right-0 bg-[#E96D2D] p-2 z-50 hidden rounded-br-xl"
               >
                 <img src="img/arrow-white.png" alt="" />
               </div>
@@ -139,10 +403,11 @@
                 <img src="img/arrow-img-1.png" alt="" />
               </div>
             </div>
-            <div id="card-img-4" class="row-span-2 relative">
+
+            <!--3-->
+            <div class="card-img row-span-2 relative">
               <div
-                id="text-card-4"
-                class="absolute w-full h-full bg-[#574D89] z-40 bg-opacity-80 hidden p-5 rounded-xl"
+                class="text-card absolute w-full h-full bg-[#574D89] z-40 p-5 rounded-xl hidden bg-opacity-0 hover:bg-opacity-80 opacity-0 hover:opacity-100"
               >
                 <div class="flex flex-col md:gap-y-2 xl:gap-y-4">
                   <div class="flex flex-col md:gap-y-1 xl:gap-y-3">
@@ -155,7 +420,7 @@
                     </div>
                     <div>
                       <p
-                        class="text-white md:text-sm xl:text-xl leading-6"
+                        class="text-white md:text-sm xl:text-xl xl:leading-6"
                         style="
                           font-family: 'Inter', sans-serif;
                           font-weight: 600;
@@ -174,7 +439,7 @@
                       >Daniel Calvi</span
                     >
                     <p
-                      class="text-white md:text-xs xl:text-base leading-[1.125rem]"
+                      class="text-white md:text-xs xl:text-base xl:leading-[1.125rem]"
                       style="font-family: 'Inter', sans-serif; font-weight: 500"
                     >
                       Dueño de Hornos Calvi
@@ -183,8 +448,7 @@
                 </div>
               </div>
               <div
-                id="arrow-card-4"
-                class="absolute bottom-0 right-0 bg-[#574D89] p-2 z-50 hidden rounded-br-xl"
+                class="arrow-card absolute bottom-0 right-0 bg-[#574D89] p-2 z-50 hidden rounded-br-xl"
               >
                 <img src="img/arrow-white.png" alt="" />
               </div>
@@ -197,17 +461,24 @@
                 <img src="img/arrow-img-4.png" alt="" />
               </div>
             </div>
-            <div id="card-img-2" class="relative">
+
+            <!--4-->
+            <div class="card-img relative">
               <div
-                id="text-card-2"
-                class="absolute w-full h-full bg-[#497FE7] z-40 bg-opacity-80 hidden p-5 rounded-xl"
+                class="text-card absolute w-full h-full bg-[#497FE7] z-40 p-5 rounded-xl hidden bg-opacity-0 hover:bg-opacity-80 opacity-0 hover:opacity-100"
               >
                 <div class="flex flex-col md:gap-y-2 xl:gap-y-4">
                   <div class="flex flex-col md:gap-y-1 xl:gap-y-3">
-                    <div><img src="img/Comillas.svg" alt="" /></div>
+                    <div>
+                      <img
+                        src="img/Comillas.svg"
+                        alt=""
+                        class="w-10 xl:w-auto"
+                      />
+                    </div>
                     <div>
                       <p
-                        class="text-white md:text-sm xl:text-xl leading-6"
+                        class="text-white md:text-sm xl:text-xl xl:leading-6"
                         style="
                           font-family: 'Inter', sans-serif;
                           font-weight: 600;
@@ -226,7 +497,7 @@
                       >Felipe Álvarez</span
                     >
                     <p
-                      class="text-white md:text-xs xl:text-base leading-[1.125rem]"
+                      class="text-white md:text-xs xl:text-base xl:leading-[1.125rem]"
                       style="font-family: 'Inter', sans-serif; font-weight: 500"
                     >
                       Dueño del restaurante Manteca
@@ -235,8 +506,7 @@
                 </div>
               </div>
               <div
-                id="arrow-card-2"
-                class="absolute bottom-0 right-0 bg-[#497FE7] p-2 z-50 hidden rounded-br-xl"
+                class="arrow-card absolute bottom-0 right-0 bg-[#497FE7] p-2 z-50 hidden rounded-br-xl"
               >
                 <img src="img/arrow-white.png" alt="" />
               </div>
@@ -249,17 +519,24 @@
                 <img src="img/arrow-img-2.png" alt="" />
               </div>
             </div>
-            <div id="card-img-3" class="relative">
+
+            <!--5-->
+            <div class="card-img relative">
               <div
-                id="text-card-3"
-                class="absolute w-full h-full bg-[#67B2A6] z-40 bg-opacity-80 hidden p-5 rounded-xl"
+                class="text-card absolute w-full h-full bg-[#67B2A6] z-40 hidden p-5 rounded-xl bg-opacity-0 hover:bg-opacity-80 opacity-0 hover:opacity-100"
               >
                 <div class="flex flex-col md:gap-y-2 xl:gap-y-4">
                   <div class="flex flex-col md:gap-y-1 xl:gap-y-3">
-                    <div><img src="img/Comillas.svg" alt="" /></div>
+                    <div>
+                      <img
+                        src="img/Comillas.svg"
+                        alt=""
+                        class="w-10 xl:w-auto"
+                      />
+                    </div>
                     <div>
                       <p
-                        class="text-white md:text-sm xl:text-xl leading-6"
+                        class="text-white md:text-sm xl:text-xl xl:leading-6"
                         style="
                           font-family: 'Inter', sans-serif;
                           font-weight: 600;
@@ -278,7 +555,7 @@
                       >Noemí Sánchez</span
                     >
                     <p
-                      class="text-white md:text-xs xl:text-base leading-[1.125rem]"
+                      class="text-white md:text-xs xl:text-base xl:leading-[1.125rem]"
                       style="font-family: 'Inter', sans-serif; font-weight: 500"
                     >
                       Comerciante
@@ -287,8 +564,7 @@
                 </div>
               </div>
               <div
-                id="arrow-card-3"
-                class="absolute bottom-0 right-0 bg-[#67B2A6] p-2 z-50 hidden rounded-br-xl"
+                class="arrow-card absolute bottom-0 right-0 bg-[#67B2A6] p-2 z-50 hidden rounded-br-xl"
               >
                 <img src="img/arrow-white.png" alt="" />
               </div>
@@ -302,6 +578,8 @@
               </div>
             </div>
           </div>
+
+          <!--icon-->
           <a
             href="#options"
             class="absolute bottom-2 transform -translate-x-1/2 left-1/2"
@@ -909,62 +1187,12 @@
       </div>
     </footer>
     <script src="./js/index.js"></script>
-
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <script>
-      let cardImg1 = document.getElementById("card-img-1");
-      let textCard1 = document.getElementById("text-card-1");
-      let arrowCard1 = document.getElementById("arrow-card-1");
-
-      cardImg1.addEventListener("mouseover", () => {
-        textCard1.classList.remove("hidden");
-        arrowCard1.classList.remove("hidden");
-      });
-
-      cardImg1.addEventListener("mouseout", () => {
-        textCard1.classList.add("hidden");
-        arrowCard1.classList.add("hidden");
-      });
-
-      let cardImg2 = document.getElementById("card-img-2");
-      let textCard2 = document.getElementById("text-card-2");
-      let arrowCard2 = document.getElementById("arrow-card-2");
-
-      cardImg2.addEventListener("mouseover", () => {
-        textCard2.classList.remove("hidden");
-        arrowCard2.classList.remove("hidden");
-      });
-
-      cardImg2.addEventListener("mouseout", () => {
-        textCard2.classList.add("hidden");
-        arrowCard2.classList.add("hidden");
-      });
-
-      let cardImg3 = document.getElementById("card-img-3");
-      let textCard3 = document.getElementById("text-card-3");
-      let arrowCard3 = document.getElementById("arrow-card-3");
-
-      cardImg3.addEventListener("mouseover", () => {
-        textCard3.classList.remove("hidden");
-        arrowCard3.classList.remove("hidden");
-      });
-
-      cardImg3.addEventListener("mouseout", () => {
-        textCard3.classList.add("hidden");
-        arrowCard3.classList.add("hidden");
-      });
-
-      let cardImg4 = document.getElementById("card-img-4");
-      let textCard4 = document.getElementById("text-card-4");
-      let arrowCard4 = document.getElementById("arrow-card-4");
-
-      cardImg4.addEventListener("mouseover", () => {
-        textCard4.classList.remove("hidden");
-        arrowCard4.classList.remove("hidden");
-      });
-
-      cardImg4.addEventListener("mouseout", () => {
-        textCard4.classList.add("hidden");
-        arrowCard4.classList.add("hidden");
+      let swiper = new Swiper(".swiper-container", {
+        slidesPerView: 1.2,
+        spaceBetween: 20,
+        loop: true,
       });
     </script>
   </body>
